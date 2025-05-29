@@ -18,7 +18,7 @@ Any errors or anomalies are also logged to ensure traceability.
 
 # Define the input and output files
 INPUT_FILE = "data/raw/sales_data.csv"
-OUTPUT_FILE = "data/processed/sales_processed.csv"
+OUTPUT_DIR = "data/processed/"
 LOG_FILE = "logs/preprocessed.logs"
 
 import pandas as pd
@@ -27,16 +27,12 @@ from datetime import datetime
 from pathlib import Path 
 
 # Ensure the output directory exist
-Path("data/processed").mkdir(parents=True, exist_ok=True)
+Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
 
 
-def preprocess_data(input_file=INPUT_FILE, output_file=OUTPUT_FILE):
+def preprocess_data():
     """
     Preprocess the data from the input file and save it to the output file.
-    
-    Args:
-        input_file (str): Path to the input CSV file.
-        output_file (str): Path to the output CSV file.
     """ 
 
     # Configure logging
@@ -48,6 +44,9 @@ def preprocess_data(input_file=INPUT_FILE, output_file=OUTPUT_FILE):
     )
     
     try: 
+        input_file = INPUT_FILE
+        
+        logging.info(f"Starting preprocessing of data from {input_file}")
         # Load the data 
         data = pd.read_csv(input_file)
         logging.info(f"Data loaded successfully from {input_file}")
@@ -60,6 +59,7 @@ def preprocess_data(input_file=INPUT_FILE, output_file=OUTPUT_FILE):
         logging.info("Missing values dropped.")
 
         # Save the processed data 
+        output_file = OUTPUT_DIR + f"sales_processed_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
         data_cleaned.to_csv(output_file, index=False)
         logging.info(f"Processed data saved to {output_file}")
     except Exception as e:
@@ -70,6 +70,4 @@ def preprocess_data(input_file=INPUT_FILE, output_file=OUTPUT_FILE):
 
 
 if __name__ == "__main__":
-    input_file = INPUT_FILE
-    output_file = OUTPUT_FILE
-    preprocess_data(input_file, output_file)
+    preprocess_data()

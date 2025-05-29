@@ -23,3 +23,31 @@
 2025-05-29T13:12:24Z - INFO - Missing values dropped.
 2025-05-29T13:12:24Z - INFO - Processed data saved to data/processed/sales_processed.csv
 2025-05-29T13:12:24Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T13:55:54Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T13:56:53Z - ERROR - An error occurred: name 'input_file' is not defined
+2025-05-29T13:56:53Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T13:57:51Z - ERROR - An error occurred: name 'input_file' is not defined
+2025-05-29T13:57:51Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T14:00:21Z - ERROR - An error occurred: name 'input_file' is not defined
+2025-05-29T14:00:21Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T14:01:15Z - ERROR - An error occurred: name 'input_file' is not defined
+2025-05-29T14:01:16Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T14:05:49Z - ERROR - An error occurred: name 'input_file' is not defined
+2025-05-29T14:05:49Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T14:06:29Z - ERROR - An error occurred: name 'input_file' is not defined
+2025-05-29T14:06:29Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T14:07:25Z - ERROR - An error occurred: name 'input_file' is not defined
+2025-05-29T14:07:25Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T14:08:23Z - ERROR - An error occurred: name 'inputfile' is not defined
+2025-05-29T14:08:23Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T14:08:49Z - INFO - Starting preprocessing of data from data/raw/sales_data.csv
+2025-05-29T14:08:49Z - INFO - Data loaded successfully from data/raw/sales_data.csv
+2025-05-29T14:08:49Z - INFO - Missing values dropped.
+2025-05-29T14:08:49Z - INFO - Processed data saved to data/processed/sales_processed_20250529_1408.csv
+2025-05-29T14:08:49Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T14:10:26Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T14:10:42Z - INFO - Starting preprocessing of data from data/raw/sales_data.csv
+2025-05-29T14:10:42Z - INFO - Data loaded successfully from data/raw/sales_data.csv
+2025-05-29T14:10:42Z - INFO - Missing values dropped.
+2025-05-29T14:10:42Z - INFO - Processed data saved to data/processed/sales_processed_20250529_1410.csv
+2025-05-29T14:10:42Z - INFO - Preprocessing complete! Processed data saved.
