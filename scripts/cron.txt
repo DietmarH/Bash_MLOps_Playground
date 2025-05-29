@@ -1,0 +1,1 @@
+*/3 * * * * cd /home/ubuntu/exam_hameister/exam_Bash_MLOps && make bash
