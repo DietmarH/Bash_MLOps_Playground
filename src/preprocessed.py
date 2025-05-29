@@ -54,6 +54,12 @@ def preprocess_data():
         # drop rows with missing values 
         data_cleaned = data.dropna()
         
+        # Convert timestamp to numeric format
+        df["time_seconds"] = pd.to_datetime(df["timestamp"]).astype(int) / 10**9  # Convert timestamp to seconds
+
+        # Remove timestamp column if it exists
+        df = df.drop("column_name", axis=1)
+
         # ----- Add more preprocessing steps here if needed -----
 
         logging.info("Missing values dropped.")

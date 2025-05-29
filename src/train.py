@@ -56,8 +56,7 @@ def train_model():
             return -1
 
         # Convert timestamp to numeric format
-        df["timestamp"] = pd.to_datetime(df["timestamp"]).astype(int) / 10**9  # Convert timestamp to seconds
-        X = df[["timestamp"]]  # Using timestamp as feature
+        X = df[["time_seconds"]]  # Using timestamp as feature
         y = df["sales"]
 
         # Split data into training and test sets
