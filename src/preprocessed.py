@@ -54,11 +54,24 @@ def preprocess_data():
         # drop rows with missing values 
         data_cleaned = data.dropna()
         
-        # Convert timestamp to numeric format
-        df["time_seconds"] = pd.to_datetime(df["timestamp"]).astype(int) / 10**9  # Convert timestamp to seconds
+        # Convert timestamp to seconds as integer
+        data_cleaned["time_seconds"] = pd.to_datetime(data_cleaned["timestamp"]).astype(int) // 10**9
+        # Ensure result is integer type
+        data_cleaned["time_seconds"] = data_cleaned["time_seconds"].astype(int)
 
         # Remove timestamp column if it exists
-        df = df.drop("column_name", axis=1)
+        data_cleaned = data_cleaned.drop("timestamp", axis=1)
+
+        # Define mapping for models
+        gpu_mapping = {
+            "rtx3060": 0,
+            "rtx3070": 1,
+            "rtx3080": 2,
+            "rtx3090": 3,
+            "rx6700": 4
+        }
+        # Map GPU models to numeric values
+        data_cleaned["model"] = data_cleaned["model"].map(gpu_mapping)
 
         # ----- Add more preprocessing steps here if needed -----
 

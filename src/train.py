@@ -51,11 +51,10 @@ def train_model():
         df = pd.read_csv(input_file)
 
         # Ensure necessary columns exist
-        if "timestamp" not in df.columns or "sales" not in df.columns:
+        if "time_seconds" not in df.columns or "sales" not in df.columns:
             logging.error("Required columns missing from dataset!")
             return -1
 
-        # Convert timestamp to numeric format
         X = df[["time_seconds"]]  # Using timestamp as feature
         y = df["sales"]
 
