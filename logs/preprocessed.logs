@@ -51,3 +51,8 @@
 2025-05-29T14:10:42Z - INFO - Missing values dropped.
 2025-05-29T14:10:42Z - INFO - Processed data saved to data/processed/sales_processed_20250529_1410.csv
 2025-05-29T14:10:42Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T15:03:04Z - INFO - Starting preprocessing of data from data/raw/sales_data.csv
+2025-05-29T15:03:04Z - INFO - Data loaded successfully from data/raw/sales_data.csv
+2025-05-29T15:03:04Z - INFO - Missing values dropped.
+2025-05-29T15:03:04Z - INFO - Processed data saved to data/processed/sales_processed_20250529_1503.csv
+2025-05-29T15:03:05Z - INFO - Preprocessing complete! Processed data saved.
