@@ -27,3 +27,39 @@
 #     - The retrieved sales data
 #     - Any possible errors
 # ==============================================================================
+
+# URL of the API endpoint
+URL_BASE="http://0.0.0.0:5000/"
+# Graphic card models to query
+GRAPHIC_CARD_MODELS=("rtx3060" "rtx3070" "rtx3080" "rtx3090" "rx6700")
+# Output file path
+OUTPUT_FILE="data/raw/sales_data.csv"
+# Log file path
+LOG_FILE="logs/collect.logs"
+
+# Write the header if the file does not exist yet
+if [ ! -f "$OUTPUT_FILE" ]; then
+    # data columns
+    DATA_HEADER="timestamp,model,sales"
+    # Write the header to the output file
+    echo "$DATA_HEADER" > "$OUTPUT_FILE"
+fi 
+
+# Iterate over all graphic card models 
+for model in "${GRAPHIC_CARD_MODELS[@]}"; do
+    # Get the current timestamp
+    TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    # API request to retrieve sales data
+    SALES=$(curl -s "$URL_BASE/$model")
+
+    # Check for errors
+    if [ -z "$SALES" ]; then
+        ERROR_MSG="Error retrieving data for model: $model"
+        echo "$TIMESTAMP - $ERROR_MSG" >> "$LOG_FILE"
+    else
+        # Append the data to the output file
+        echo "$TIMESTAMP,$model,$SALES" >> "$OUTPUT_FILE"
+        # Log the successful request
+        echo "$TIMESTAMP - Queried model: $model - Sales: $SALES" >> "$LOG_FILE"
+    fi
+done
