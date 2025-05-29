@@ -1,0 +1,25 @@
+2025-05-29T12:28:13Z - ERROR - An error occurred: Error tokenizing data. C error: Expected 3 fields in line 501, saw 5
+2025-05-29T13:03:24Z - ERROR - An error occurred: Error tokenizing data. C error: Expected 3 fields in line 501, saw 5
+2025-05-29T13:05:24Z - INFO - Data loaded successfully from data/raw/sales_data.csv
+2025-05-29T13:05:24Z - INFO - Missing values dropped.
+2025-05-29T13:05:24Z - INFO - Processed data saved to data/processed/sales_processed.csv
+2025-05-29T13:07:38Z - INFO - Data loaded successfully from data/raw/sales_data.csv
+2025-05-29T13:07:38Z - INFO - Missing values dropped.
+2025-05-29T13:07:38Z - INFO - Processed data saved to data/processed/sales_processed.csv
+2025-05-29T13:08:57Z - INFO - Data loaded successfully from data/raw/sales_data.csv
+2025-05-29T13:08:57Z - INFO - Missing values dropped.
+2025-05-29T13:08:57Z - INFO - Processed data saved to data/processed/sales_processed.csv
+2025-05-29T13:09:10Z - INFO - Data loaded successfully from data/raw/sales_data.csv
+2025-05-29T13:09:10Z - INFO - Missing values dropped.
+2025-05-29T13:09:10Z - INFO - Processed data saved to data/processed/sales_processed.csv
+2025-05-29T13:11:01Z - INFO - Data loaded successfully from data/raw/sales_data.csv
+2025-05-29T13:11:01Z - INFO - Missing values dropped.
+2025-05-29T13:11:01Z - INFO - Processed data saved to data/processed/sales_processed.csv
+2025-05-29T13:11:58Z - INFO - Data loaded successfully from data/raw/sales_data.csv
+2025-05-29T13:11:58Z - INFO - Missing values dropped.
+2025-05-29T13:11:58Z - INFO - Processed data saved to data/processed/sales_processed.csv
+2025-05-29T13:11:58Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T13:12:24Z - INFO - Data loaded successfully from data/raw/sales_data.csv
+2025-05-29T13:12:24Z - INFO - Missing values dropped.
+2025-05-29T13:12:24Z - INFO - Processed data saved to data/processed/sales_processed.csv
+2025-05-29T13:12:24Z - INFO - Preprocessing complete! Processed data saved.
