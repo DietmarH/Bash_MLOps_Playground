@@ -56,3 +56,13 @@
 2025-05-29T15:03:04Z - INFO - Missing values dropped.
 2025-05-29T15:03:04Z - INFO - Processed data saved to data/processed/sales_processed_20250529_1503.csv
 2025-05-29T15:03:05Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T15:09:06Z - INFO - Starting preprocessing of data from data/raw/sales_data.csv
+2025-05-29T15:09:06Z - INFO - Data loaded successfully from data/raw/sales_data.csv
+2025-05-29T15:09:06Z - INFO - Missing values dropped.
+2025-05-29T15:09:06Z - INFO - Processed data saved to data/processed/sales_processed_20250529_1509.csv
+2025-05-29T15:09:07Z - INFO - Preprocessing complete! Processed data saved.
+2025-05-29T15:09:34Z - INFO - Starting preprocessing of data from data/raw/sales_data.csv
+2025-05-29T15:09:34Z - INFO - Data loaded successfully from data/raw/sales_data.csv
+2025-05-29T15:09:34Z - INFO - Missing values dropped.
+2025-05-29T15:09:34Z - INFO - Processed data saved to data/processed/sales_processed_20250529_1509.csv
+2025-05-29T15:09:34Z - INFO - Preprocessing complete! Processed data saved.

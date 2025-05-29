@@ -34,12 +34,8 @@ logging.basicConfig(
     format="%(asctime)sZ - %(levelname)s - %(message)s",
     datefmt="%Y-%m-%dT%H:%M:%S"
 )
-print(f"Logging to {LOG_FILE}")
-logging.info(f"Logging to {LOG_FILE}")
 
 def train_model():
-    print(f"Logging to {LOG_FILE} in train_model")
-
     try:
         # Get the list of input files
         input_files = [os.path.join(INPUT_DIR, f) for f in os.listdir(INPUT_DIR) if f.endswith(".csv")]

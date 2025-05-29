@@ -47,3 +47,16 @@
 2025-05-29T15:03:09Z - INFO - Model evaluation metrics - RMSE: 6.729563230247071, MAE: 5.712537683692633, R²: -0.09897597868125296
 2025-05-29T15:03:09Z - INFO - Saving the standard model to model/sales_model_20250529_1503.pkl
 2025-05-29T15:03:10Z - INFO - Training completed successfully.
+2025-05-29T15:09:07Z - INFO - Model Training started.
+2025-05-29T15:09:08Z - INFO - Logging to logs/train.logs
+2025-05-29T15:09:08Z - INFO - Starting model training using data/processed/sales_processed_20250529_1509.csv
+2025-05-29T15:09:08Z - INFO - Existing standard model detected. Load the model.
+2025-05-29T15:09:08Z - INFO - Model evaluation metrics - RMSE: 6.679639755706081, MAE: 5.660246434120031, R²: -0.16300952386142575
+2025-05-29T15:09:08Z - INFO - Saving the standard model to model/sales_model_20250529_1509.pkl
+2025-05-29T15:09:09Z - INFO - Training completed successfully.
+2025-05-29T15:09:34Z - INFO - Model Training started.
+2025-05-29T15:09:36Z - INFO - Starting model training using data/processed/sales_processed_20250529_1509.csv
+2025-05-29T15:09:36Z - INFO - Existing standard model detected. Load the model.
+2025-05-29T15:09:36Z - INFO - Model evaluation metrics - RMSE: 7.094795736949887, MAE: 5.9517252740405855, R²: -0.13389111980808388
+2025-05-29T15:09:36Z - INFO - Saving the standard model to model/sales_model_20250529_1509.pkl
+2025-05-29T15:09:36Z - INFO - Training completed successfully.
