@@ -2,3 +2,4 @@ pandas
 xgboost
 joblib
 scikit-learn
+pytest
